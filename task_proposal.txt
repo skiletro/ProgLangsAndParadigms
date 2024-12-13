@@ -1,0 +1,44 @@
+My proposed task is a tic-tac-toe like game, which would be implemented as
+follows:
+- A 4 by 4 grid (instead of a 3 by 3 grid in a typical tic-tac-toe game)
+- 2 players (represented using X and O, or some other representation that is
+  clear to the user)
+- Players choose where to put their piece, and after their turn is over, the
+  board shifts around, with the inner and outer part of the 4x4 grid shifting
+  clockwise.
+- The game is won by getting 4 in a row (either horizontal, vertical, or
+  diagonal)
+
+For example, say a player places a character in slot 1, 4 of the grid
+
+---X
+----
+----
+----
+
+After their turn, the inner and outer grid would rotate clockwise and would
+result in this grid arrangement:
+
+----
+---X
+----
+----
+
+The next player places their piece in 2, 2:
+
+----
+-O-X
+----
+----
+
+And after their turn ends, the inner and outer grid rotates clockwise resulting
+in:
+
+----
+--O-
+---X
+----
+
+In order to personalise the task, a robotic second player will be used with an
+RNG seed of 99693381 (this used to be my student ID number, but has since been
+replaced with a random 8 digit number).
